@@ -105,6 +105,6 @@ A simple ASP.NET Core MVC application for managing student records. This project
 
 ## Screensort
 
-![alt text](assets/image.png)
-![alt text](assets/image-2.png)
-![alt text](assets/image-1.png)
+![alt text](Assets/image.png)
+![alt text](Assets/image-2.png)
+![alt text](Assets/image-1.png)
