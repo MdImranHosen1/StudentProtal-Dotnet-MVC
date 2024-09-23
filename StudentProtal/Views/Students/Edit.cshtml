@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model StudentProtal.Models.Entity.Student
+<h1>Edit student</h1>
+@if(Model is null)
+{
+    <div class="alert alert-danger" role="alert">
+        No student is found with this id!
+    </div>
+}
+else
+{
+  
+    <form method="post">
+        <div class="mb-3">
+            <label for="exampleInputId1" class="form-label">Id</label>
+            <input type="text" class="form-control" id="exampleInputId1" asp-for="id" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName1" asp-for="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPhone1" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="exampleInputPhone1" asp-for="phone">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" asp-for="Subscribe">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+}
+
+
